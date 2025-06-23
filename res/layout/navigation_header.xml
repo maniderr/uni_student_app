@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="start">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Helper"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cellContainer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cell_height"
+    android:background="@drawable/course_cell_with_divider">
+
+    <TextView
+        android:id="@+id/cellText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/courseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/courseLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+    </LinearLayout>
+</FrameLayout>

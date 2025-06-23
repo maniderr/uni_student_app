@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Student Helper</string>
+    <string name="open_app_usage_setting">Open Apps with usage access settings</string>
+    <string name="last_time_used">"Last time used: "</string>
+    <string name="time_span">"Time span: "</string>
+    <string name="battery_drain_label">"Battery drain: "</string>
+
+    <string name="display_order_text">Display Order</string>
+    <string name="app_name_label">App Name</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="last_time_used_label">Last Used</string>
+    <string name="usage_time_label">Usage Time</string>
+    <string name="refresh_button_description">Refresh</string>
+    <!-- label for usage time -->
+    <string name="app_icon_description">App Icon</string>
+    <string name="maps_api_key">AIzaSyBFqAtuWhmyxELwTw3G4qpSv4kp62ZI4Bk</string>
+    <string name="places_api_key">AIzaSyDNhbmm9BBL5d8xafskYpq-eqM7vqNDgM8</string>
+    <string name="add_item_description">Add Item</string>
+    <string name="select_day_prompt">Select a day</string>
+    <string name="select_role">Select Role</string>
+    <string name="select_group">Select Group</string>
+    <string name="select_year">Select Year</string>
+    <string name="select_faculty">Select Faculty</string>
+    <string name="select_section">Select Section</string>
+
+    <string-array name="sheet_names">
+        <item>132039003</item>
+        <item>564247203</item>
+        <!-- Add more sheet names as needed -->
+    </string-array>
+
+    <string-array name="sort_options">
+        <item>Usage Time</item>
+        <item>Last Time Used</item>
+        <item>App Name</item>
+        <item>Battery Drain</item> <!-- Add this line -->
+    </string-array>
+</resources>

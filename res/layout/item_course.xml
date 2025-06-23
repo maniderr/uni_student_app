@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/courseLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration: "
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/courseGroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/modifyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="Modify"/>
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="Delete"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

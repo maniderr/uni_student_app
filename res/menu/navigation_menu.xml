@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ancmnt"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Announcements" />
+        <item
+            android:id="@+id/nav_calendar_tasks"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Tasks Calendar" />
+        <item
+            android:id="@+id/nav_yearly_schedule"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Courses Schedules" />
+        <item
+            android:id="@+id/nav_app_usage"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="App Battery Usage" />
+        <item
+            android:id="@+id/nav_public_transport"
+            android:icon="@android:drawable/ic_menu_directions"
+            android:title="Public Transport" />
+        <item
+            android:id="@+id/nav_lock_options"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Train Schedules" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@android:drawable/ic_menu_mylocation"
+            android:title="City Locations" />
+        <item
+            android:id="@+id/nav_student_chat"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="Student's Chat" />
+        <item
+            android:id="@+id/nav_change_contact"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Faculty Contact" />
+        <item
+            android:id="@+id/nav_chatbot"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="AI Chatbot" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Logout" />
+    </group>
+</menu>

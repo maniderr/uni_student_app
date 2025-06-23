@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Announcement"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etAnnouncementText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Announcement text"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No date selected"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit"/>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="First Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Last Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Username" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerRole"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:prompt="@string/select_role"/>
+
+        <TextView
+            android:id="@+id/textViewFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerFaculty"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:prompt="@string/select_faculty"/>
+
+        <TextView
+            android:id="@+id/textViewSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSection"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:prompt="@string/select_section"/>
+
+        <TextView
+            android:id="@+id/textViewYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:prompt="@string/select_year"/>
+
+        <TextView
+            android:id="@+id/textViewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerGroup"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:prompt="@string/select_group"/>
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#0A66C2"
+            android:padding="12dp"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

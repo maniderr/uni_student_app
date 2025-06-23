@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task" />
+
+    <EditText
+        android:id="@+id/editTextCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date" />
+
+    <EditText
+        android:id="@+id/editTextSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Source" />
+
+    <Button
+        android:id="@+id/btnSaveItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

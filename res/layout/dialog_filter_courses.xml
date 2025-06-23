@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Courses"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Faculty"/>
+    <Spinner android:id="@+id/facultySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Year"/>
+    <Spinner android:id="@+id/yearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/sectionFilterLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Section"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/sectionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Course Name"/>
+    <EditText android:id="@+id/nameFilterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter course name"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Day"/>
+    <EditText android:id="@+id/dayFilterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter day (e.g. Monday)"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Location"/>
+    <EditText android:id="@+id/locationFilterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter location"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+    <Button android:id="@+id/applyFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Filters"/>
+
+    <Button android:id="@+id/clearFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Filters"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

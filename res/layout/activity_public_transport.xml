@@ -1,0 +1,54 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Container for Spinners -->
+    <LinearLayout
+        android:id="@+id/spinner_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Spinner for Routes -->
+        <Spinner
+            android:id="@+id/spinner_routes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner for Trips -->
+        <Spinner
+            android:id="@+id/spinner_trips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <Button
+            android:id="@+id/btn_buy_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Ticket"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spinner_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintTop_toBottomOf="@id/spinner_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

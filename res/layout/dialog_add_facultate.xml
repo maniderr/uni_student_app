@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <EditText android:id="@+id/siteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Website"/>
+
+    <EditText android:id="@+id/addressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"/>
+
+    <EditText android:id="@+id/phoneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"/>
+
+    <EditText android:id="@+id/faxTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fax"/>
+
+    <EditText android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <Button android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+</LinearLayout>

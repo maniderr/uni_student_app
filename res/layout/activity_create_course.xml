@@ -1,0 +1,154 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Course Basic Info Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/courseNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter course name"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/courseLocationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter location"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Schedule Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Day of week"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/courseDaySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:prompt="@string/select_day_prompt"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start time (hour)"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/courseTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="8-21"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration (hours)"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/courseDurationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1-14"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Target Audience Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target Audience"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/facultySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/sectionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Groups"
+            android:layout_marginBottom="4dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/groupsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveCourseButton"
+            android:text="Save Course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>
